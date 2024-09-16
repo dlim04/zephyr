@@ -1,0 +1,14 @@
+# Copyright (c) 2020 Vestas Wind Systems A/S
+# SPDX-License-Identifier: Apache-2.0
+
+# TODO Check this is correct
+if SHIELD_MIKROE_ADC_9_CLICK
+
+if ADC
+
+config ADC_INIT_PRIORITY
+	default 80
+
+endif # ADC
+
+endif # SHIELD_MIKROE_ADC_CLICK

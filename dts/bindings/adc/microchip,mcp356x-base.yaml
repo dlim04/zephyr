@@ -1,0 +1,10 @@
+# Common fields for Microchip MCP3561/MCP3562/MCP3564
+
+include: [adc-controller.yaml, spi-device.yaml]
+
+properties:
+  "#io-channel-cells":
+    const: 1
+
+io-channel-cells:
+  - input

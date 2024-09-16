@@ -1,0 +1,18 @@
+/*
+ * Copyright (c) 2020 Vestas Wind Systems A/S
+ *
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+#include <zephyr/dt-bindings/adc/adc.h>
+
+&mikrobus_spi {
+	status = "okay";
+
+	mcp3564_mikroe_adc_9_click: mcp3564@0 {
+		compatible = "microchip,mcp3564";
+		reg = <0x0>;
+		spi-max-frequency = <20000000>;
+		#io-channel-cells = <1>;
+	};
+};
